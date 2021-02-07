@@ -6,6 +6,7 @@ const Navbar = () => {
     return (
         <nav>
             Also a change
+            72 hour project
         </nav>
     )
 }
