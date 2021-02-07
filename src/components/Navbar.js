@@ -5,6 +5,7 @@ const Navbar = () => {
     // return must have one parent element
     return (
         <nav>
+            72 hour project
         </nav>
     )
 }
