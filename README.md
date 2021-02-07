@@ -18,13 +18,13 @@ npx create-react-app
 # Getting Started
 Getting the code
 ```bash
-git clone https://github.com/swftdev/base.git
+git clone https://github.com/CLTsolutions/72_hours.git
 ```
 
 After cloning change terminal location
 into the folder
 ```bash
-cd base
+cd 72_hours
 ```
 
 Installing Needed Node modules so the app
