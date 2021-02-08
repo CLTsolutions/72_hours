@@ -3,7 +3,7 @@ import './App.css'; // This pattern is preferred where css for this component ha
 // the zomato import 
 import Restaurants from './components/Zomato/Restaurants'; 
 // A component import
-import Navbar from './components/navBar/Navbar'
+import Navbar from './components/Navbar'
 
 
 // Defining our <App /> component the function name matches the file name
