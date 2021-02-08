@@ -4,7 +4,7 @@ import './App.css'; // This pattern is preferred where css for this component ha
 import Restaurants from './components/Zomato/Restaurants'; 
 // A component import
 import Navbar from './components/Navbar'
-
+import Nasa from './components/nasa/Nasa'
 
 // Defining our <App /> component the function name matches the file name
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <br/>
       <Restaurants/>
       <br/>
-  
+      <Nasa />
     </div>
   );
 }
