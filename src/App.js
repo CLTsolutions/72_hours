@@ -24,17 +24,13 @@ function App() {
       );
     })
   }, [])
-
   return ( 
     <div className="App"> {/* Parent Element. Also we can't use the word class, so we use className in jsx*/}
       {/* Navbar is our imported component*/}
-      {/* <Navbar /> */}
-      <Nasa long={location.longitude} lat={location.latitude} />
-      <hr/>
-      <Restaurants />
       <br/>
-      <Weather long={location.longitude} lat={location.latitude} />
-      <hr/>
+      <Nasa long={location.longitude} lat={location.latitude} />
+      <br/>
+      <Restaurants long={location.longitude} lat={location.latitude} />
     </div>
   );
 }
