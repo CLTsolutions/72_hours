@@ -4,7 +4,7 @@ import './App.css'; // This pattern is preferred where css for this component ha
 // the zomato import 
 import Restaurants from './components/zomato/restaurants';
 // A component import
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Nasa from './components/nasa/Nasa';
 
 // Defining our <App /> component the function name matches the file name
@@ -27,13 +27,11 @@ function App() {
   return ( 
     <div className="App"> {/* Parent Element. Also we can't use the word class, so we use className in jsx*/}
       {/* Navbar is our imported component*/}
-      <Navbar />
-      {location.latitude}
-      {location.longitude}
+      {/* <Navbar /> */}
       <Nasa long={location.longitude} lat={location.latitude} />
-      <br/>
+      <hr/>
       <Restaurants />
-      <br/>
+      <hr/>
     </div>
   );
 }

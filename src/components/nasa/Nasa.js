@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import './Nasa.css'
+import './Nasa.css';
 
 const Nasa = ({lat, long}) => {
     // const url = `https://api.nasa.gov/planetary/earth/assets?lon=${long}&lat=${lat}&date=2019-03-11&&dim=0.05&api_key=QHaRH5NLVJMiqZNxZ9I84QtHlOsxTH4mvhHO4z1Y`;
@@ -26,13 +26,10 @@ const Nasa = ({lat, long}) => {
         pleaseWork()        
 
     }, [lat, long, url]);
-    
-    console.log(imgUrl);
 
     return (
         <div>
             <h1>NASA</h1>
-            {imgUrl}
             <div>
                 <img src={imgUrl} className='nasa-image' />
             </div>
