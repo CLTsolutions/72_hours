@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 // import {usePosition} from 'use-position';
 import Restaurant from '../zomato/restaurant';
-import {Row, Container, Col} from "reactstrap"; 
+// import {Row, Container, Col} from "reactstrap"; 
+import { Table } from "reactstrap"; 
 import '../../components/zomato/restaurants.css';
 
 const userKey = 'e91ff5346da7eda144795da203ce7880';
@@ -31,29 +32,36 @@ useEffect (() => {
  
     
 return (
-    <Container>
-        <Row>
-            <Col lg = "8">
-            <h1> Restaurants Near You </h1>
-            <br/>
-                <table dark hover borderless responsive>
-                <thread>
-                    <tr>
-                        <th scope = "row">Name</th>
-                        <th scope = "row">Address</th>
-                        <th scope = "row">Rating</th>
-                        <th scope = "row">Cuisine</th>
-                        <th scope = "row">Link</th>
-                    </tr>
-                </thread>
-                <tbody>
-                    {Restaurant.length > 0 ?
-                    <Restaurant restaurants = {restaurants} />: null}
-                </tbody>
-                </table>
-            </Col>
-        </Row>
-    </Container>
+    // <Container>
+    //     <Row>
+    //         <Col lg = "8">
+    //         <h1> Restaurants Near You </h1>
+    //         <br/>
+    //             <table dark hover borderless responsive>
+    //             <thread>
+    //                 <tr>
+    //                     <th scope = "row">Name</th>
+    //                     <th scope = "row">Address</th>
+    //                     <th scope = "row">Rating</th>
+    //                     <th scope = "row">Cuisine</th>
+    //                     <th scope = "row">Link</th>
+    //                 </tr>
+    //             </thread>
+    //             <tbody>
+    //                 {Restaurant.length > 0 ?
+    //                 <Restaurant restaurants = {restaurants} />: null}
+    //             </tbody>
+    //             </table>
+    //         </Col>
+    //     </Row>
+    // </Container>
+    <div>
+        <h1> Restaurants Near You </h1>
+        <div className='food-table'>
+            {Restaurant.length > 0 ?
+            <Restaurant restaurants = {restaurants} />: null}
+        </div>
+    </div>
 )
 
 }               
