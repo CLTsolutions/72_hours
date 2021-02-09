@@ -32,7 +32,7 @@ const Weather = ({lat, long}) => {
     return (
         <div>
             <h1>Weather</h1>
-            {imgUrl}
+            
             <div>
                 <img src={imgUrl} className='nasa-image' />
             </div>
