@@ -6,6 +6,7 @@ import Restaurants from './components/zomato/restaurants';
 // A component import
 import Navbar from './components/Navbar';
 import Nasa from './components/nasa/Nasa';
+import Weather from './components/weather/weather'
 
 // Defining our <App /> component the function name matches the file name
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <br/>
       <Restaurants />
       <br/>
+      <Weather long={location.longitude} lat={location.latitude} />
     </div>
   );
 }
