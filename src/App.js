@@ -4,7 +4,7 @@ import './App.css'; // This pattern is preferred where css for this component ha
 // the zomato import 
 import Restaurants from './components/zomato/restaurants';
 // A component import
-// import Navbar from './components/Navbar';
+//import Navbar from './components/Navbar';
 import Nasa from './components/nasa/Nasa';
 import Weather from './components/weather/weather'
 
@@ -34,7 +34,6 @@ function App() {
       <Restaurants long={location.longitude} lat={location.latitude}/>
       <br/>
       <Weather long={location.longitude} lat={location.latitude} />
-      <hr/>
     </div>
   );
 }

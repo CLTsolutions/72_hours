@@ -1,7 +1,14 @@
-.App {
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background: fixed;
     background-color: #1f3e6e;
     background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png");
+}
+
+.App {
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     text-align: center;
+    /* margin: auto; */
 }
