@@ -30,8 +30,8 @@ function App() {
       {/* Navbar is our imported component*/}
       {/* <Navbar /> */}
       <Nasa long={location.longitude} lat={location.latitude} />
-      <hr/>
-      <Restaurants />
+      <br/>
+      <Restaurants long={location.longitude} lat={location.latitude}/>
       <br/>
       <Weather long={location.longitude} lat={location.latitude} />
       <hr/>
