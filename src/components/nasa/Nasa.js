@@ -4,7 +4,7 @@ import './Nasa.css';
 
 const Nasa = ({lat, long}) => {
     // const url = `https://api.nasa.gov/planetary/earth/assets?lon=${long}&lat=${lat}&date=2019-03-11&&dim=0.05&api_key=QHaRH5NLVJMiqZNxZ9I84QtHlOsxTH4mvhHO4z1Y`;
-    const url = `https://api.nasa.gov/planetary/earth/assets?lon=${long}&lat=${lat}&date=2014-02-01&dim=0.15&api_key=QHaRH5NLVJMiqZNxZ9I84QtHlOsxTH4mvhHO4z1Y`;
+    const url = `https://api.nasa.gov/planetary/earth/assets?lon=${long}&lat=${lat}&date=2020-02-01&dim=0.15&api_key=QHaRH5NLVJMiqZNxZ9I84QtHlOsxTH4mvhHO4z1Y`;
     const [imgUrl, setImgUrl] = useState('');
 
     const pleaseWork = async() => {
