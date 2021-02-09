@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 const Weather = ({lat, long}) => {
     const url = `https://api.openweathermap.org/data/2.5/?.weather?lat=${lat}&lon=${long}&appid=21753438a43d6e17986245c12204bb40`;
-    const [imgUrl, setImgUrl] = useState([]);
+    const [imgUrl, setImgUrl] = useState('');
 
     const pleaseWork = async() => {
        const response = await fetch(url)
@@ -12,7 +12,7 @@ const Weather = ({lat, long}) => {
        console.log(data)
        setImgUrl(data.url)
     }
-
+// taco
     useEffect(() => {
         // console.log(lat);
         // fetch(url)
@@ -25,7 +25,7 @@ const Weather = ({lat, long}) => {
         // // pleaseWork()        
         pleaseWork()
 
-    }, []);
+    }, [url]);
     
     console.log(imgUrl);
 
